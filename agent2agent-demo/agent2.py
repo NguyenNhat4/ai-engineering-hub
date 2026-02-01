@@ -40,5 +40,5 @@ class CosineAgent(A2AServer):
 
 # Run the server
 if __name__ == "__main__":
-    agent = CosineAgent()
-    run_server(agent, port=4738)
+    agent = CosineAgent(url="http://localhost:4737")
+    run_server(agent, port=4737, host="localhost")

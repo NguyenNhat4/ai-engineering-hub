@@ -5,7 +5,8 @@ import re
 @agent(
     name="Sine Agent",
     description="Provides the sine of a number",
-    version="1.0.0"
+    version="1.0.0",
+    url="http://localhost:4737"
 )
 class SineAgent(A2AServer):
     
@@ -40,5 +41,5 @@ class SineAgent(A2AServer):
 
 # Run the server
 if __name__ == "__main__":
-    agent = SineAgent()
+    agent = SineAgent(url="http://localhost:4737")
     run_server(agent, port=4737)

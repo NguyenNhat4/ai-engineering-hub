@@ -40,5 +40,5 @@ class TangentAgent(A2AServer):
 
 # Run the server
 if __name__ == "__main__":
-    agent = TangentAgent()
+    agent = TangentAgent(url="http://localhost:4739")
     run_server(agent, port=4739)
